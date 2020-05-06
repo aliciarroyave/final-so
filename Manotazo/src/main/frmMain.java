@@ -37,63 +37,9 @@ public class frmMain extends javax.swing.JFrame {
         contProd.start();
         contJ1.start();
         contJ2.start();
-//        generador.start();
-//        Consumidor jugador1, jugador2;
-//        jugador1 = new Consumidor();
-//        jugador1.estado = lblEstado1;
-//        jugador1.contador = lblContador1;
-//        jugador2 = new Consumidor();
-//        jugador2.estado = lblEstado2;
-//        jugador2.contador = lblContador2;
-//        jugador1.start();
-//        jugador2.start();
+
     }
-//    
-//    private class Productor extends Thread{
-//        @Override
-//        public void run(){
-//            while(true){
-//                while(numero!=0)
-//                    System.out.println("Esperando...");
-//                try {
-//                    Thread.sleep(2000); // 2 segundos para generar un número
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//                numero = 1;
-//                lblNumero.setText(String.valueOf(numero));
-//                System.out.println("Acabo de producir: " + numero);
-//            }
-//        }
-//    }
-//    
-//    private class Consumidor extends Thread{
-//        private int limite=0, numeroAtrapado=0;
-//        private JLabel estado, contador;
-//        
-//        @Override
-//        public void run(){
-//            while(true){
-//                while(numero==0)
-//                    System.out.println("Esperando...");
-//                try {
-//                    Thread.sleep(100);
-//                } catch (InterruptedException ex) {
-//                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
-//                }
-//                numeroAtrapado = numero;
-//                numero = 0;
-//                lblNumero.setText("null");
-//                aumentar();
-//            }
-//        }
-//        
-//        private void aumentar(){
-//            limite+= numeroAtrapado;
-//            contador.setText(String.valueOf(limite));
-//            numeroAtrapado = 0;
-//        }
-//    }
+
     static class controladorProductor extends Thread{
         public void run(){
             while(true){
